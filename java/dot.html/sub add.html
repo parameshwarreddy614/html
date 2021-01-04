@@ -1,0 +1,32 @@
+<body>
+
+    <input type="text" name="value" id="feild1_id"><br><br>
+    <input type="text" name="value" id="feild2_id"><br><br>
+    <button type="button" onclick="add()">Add</button>
+    <button type="button" onclick="sub()">Sub</button>
+    <br><br>
+    <span id="value">Total</span>
+
+    <script>
+
+        function add() {
+            var num1 = document.getElementById("feild1_id").value;
+            var num2 = document.getElementById("feild2_id").value;
+            var sum;
+            sum = parseInt(num1) + parseInt(num2);
+            document.getElementById("value").innerHTML = sum;
+
+        }
+
+        function sub() {
+            var num1 = document.getElementById("feild1_id").value;
+            var num2 = document.getElementById("feild2_id").value;
+            var sum;
+            sum = parseInt(num1) - parseInt(num2);
+            document.getElementById("value").innerHTML = sum;
+        }
+
+    </script>
+    
+</body>
+S
