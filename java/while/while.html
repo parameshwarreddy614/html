@@ -1,0 +1,63 @@
+<html>
+<head>
+
+</head>
+<body>
+    <ul id="messagesList">
+
+    </ul>
+    <script>
+
+        var messages=[
+            { 
+                sender: "ravi",
+                message: "hello",
+                time: "10:20"
+
+            },
+            { 
+                sender: "ramu",
+                message: "how",
+                time: "10:40"
+
+            },
+            { 
+                sender: "kittu",
+                message: "sorry",
+                time: "10:10"
+
+            },
+            { 
+                sender: "rahul",
+                message: "happy new year",
+                time: "12:20"
+
+            },
+            { 
+                sender: "ramesh",
+                message: "hello",
+                time:   " 11:20 "
+
+            },
+         ]
+
+             var index=0;
+
+             var ul = document.getElementById("messagesList");
+            
+             while(index < messages.length){
+                
+                var currentMessage=messages[index];
+
+                ul.innerHTML+="<li>" + currentMessage.sender + ":    " +currentMessage.message +"   " +currentMessage.time ;
+
+                    index++;
+
+            }
+
+        
+    </script>
+
+</body>
+
+</html>
