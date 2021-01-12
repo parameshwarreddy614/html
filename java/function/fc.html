@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <input type="text" id="name" /><br/>
+        <input type="text" id="price" /><br/>
+        <button onclick="getDetails()">details</button>
+        <script>
+            function getDetails() {
+    var name = document.getElementById("name").value
+    var price = document.getElementById("price").value
+    function laptop(name,price) {
+    this.name = name;
+    this.price = price;
+    return this.name
+    }
+    var lp1 = new laptop(name,price)
+    console.log(lp1)
+    console.log(lp1.name)
+    console.log(lp1.price)
+}
+
+        </script>
+    </body>
+</html>
