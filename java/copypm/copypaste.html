@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+    <input oncontextmenu="return rightclick()" onpaste="return paste()" oncopy="return copy()" type="text" placeholder="enter text" > <span id="msg"></spanid></span>
+    <script>
+        function paste(){
+            document.getElementById("msg").innerHTML="paste is not possible"
+            return false;
+        }
+        function copy(){
+            document.getElementById("msg").innerHTML="copy is not possible"
+            return false;
+        
+        }
+        function rightclick(){
+            document.getElementById("msg").innerHTML="rightclick is not possible"
+            return false;
+        
+        }
+    </script>
+</body>
+</html>
