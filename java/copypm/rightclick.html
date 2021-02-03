@@ -1,0 +1,18 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+    <input oncontextmenu="return rightclick()" type="text" placeholder="enter text" > <span id="msg">
+        <ul id="msg"></ul>
+    <script>
+        function rightclick(){
+            document.getElementById("msg").innerHTML="rightclick is not possible"
+            return false;
+        
+        }
+    </script>
+</body>
+</html>
