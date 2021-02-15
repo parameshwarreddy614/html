@@ -1,0 +1,135 @@
+Meta characters:
+
+. (dot) :  dot acts as a place holder 
+
+
+Problem statement:
+
+ write a pattern that checks the following mail extension 
+
+ .com
+
+ ex:  ravi@gmail.com ,  ram@gmail.com, abc.com
+
+
+var str="ravi@gmail.com";
+
+var pattern=/[.]com/;
+
+console.log(pattern.test(str));
+
+/d:  digit
+
+var str="ravi@gmail1.com";
+
+var pattern=/\d/;
+
+console.log(pattern.test(str));
+
+
+\D:
+
+var str="ravi@gmail1.com";
+
+var pattern=/\D/;
+
+console.log(pattern.test(str));
+
+\w: word character - a-z, A-Z, 0-9, _
+
+var str="a";
+
+var pattern=/\w/;
+
+console.log(pattern.test(str));
+
+\W:  opp to \w - non word character
+
+
+var str="a!";
+
+var pattern=/\W/;
+
+console.log(pattern.test(str));
+
+\s- white space :
+
+
+var str="a";
+
+var pattern=/\s/;
+
+console.log(pattern.test(str));
+
+
+\S- Non white space
+
+
+var str="a";
+
+var pattern=/\S/;
+
+console.log(pattern.test(str));
+
+
+Quantifiers:
+
++,*,?,{X}, {X,Y},{X,}, ^,$,?=,?!
+
+N+ - should have atleast one N
+
+var str="aaaaaa7";
+
+var pattern=/[a-z]+[0-9]+/;
+
+console.log(pattern.test(str));
+
+
+var str="asqwed7";
+
+var pattern=/[a-z]s[0-9]+/;
+
+console.log(pattern.test(str));
+
+
+problem statement:
+
+MDP[0-9]+AYP
+
+
+N*:
+
+var str="aa7";
+
+var pattern=/[a-z]*[0-9]+/;
+
+console.log(pattern.test(str));
+
+
+range:
+
+var str="1a223";
+
+var pattern=/[0-9]{2,}/;
+
+console.log(pattern.test(str));
+
+
+var str="D22SPCY";
+
+var pattern=/^HYD[0-9]{2}SPCY$/;
+
+console.log(pattern.test(str));
+
+
+Problem Statement:
+
+Create a pattern that should have contain the following 
+constraints.
+
+ 1 upper case , 1 lower case , 1 special character, 1 digit,
+ length must be atleast 8
+
+ *,., ?=, [a-z],[A-Z]
+
+ 

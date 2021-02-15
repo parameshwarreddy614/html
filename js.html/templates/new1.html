@@ -1,0 +1,39 @@
+<head>
+<form>
+    username:<input type="username" id="username"></input>
+    company:<input type="name" id="name"></input>
+    location:<input type="name" id="name"></input>
+    submit:<button onclick="submit()" >submit</button>
+</form>
+</head>
+<body>
+    <script>
+         
+   
+class Client{
+    username;
+    company;
+    location;
+    submit(username,company,location){
+
+        this.username=username;
+        this.company=company;
+        this.location=location;
+     }
+}
+var Client= new client();
+client.submit("ravi","hyd",21);
+    var ceo="ragav";
+        console.log(`
+        Hello ${client.username},
+
+        We are visiting your ${client.company} to the location ${client.location} for 
+        project discussion.
+
+        Thanks,
+        ${ceo}
+      
+      `);
+   
+      </script>
+      </body>
